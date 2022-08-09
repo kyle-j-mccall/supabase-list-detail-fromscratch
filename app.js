@@ -1,8 +1,18 @@
-// import functions and grab DOM elements
+import { getCities } from './fetch-utils.js';
+import { renderCity } from './render-DOM-nodes.js';
 
-// let state
+const citiesListContainer = document.getElementById('cities-container');
 
-// set event listeners 
-  // get user input
-  // use user input to update state 
-  // update DOM to reflect the new state
+
+async function loadData() {
+    const allCities = await getCities();
+    console.log(allCities);
+    for (let city of allCities) {
+        const citiesEl = renderCity(city);
+        citiesListContainer.append(citiesEl);
+        // console.log(getCity(city.id));
+    }
+} 
+loadData();
+
+
