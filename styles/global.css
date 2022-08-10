@@ -21,6 +21,23 @@ header {
     background-color: var(--header-background);
 }
 
+#cities-container {
+    justify-self: center;
+}
+
+p {
+    text-align: center;
+}
+
+#pnw-states-container {
+    justify-self: center;
+
+}
+
+#details-container {
+    justify-self: center;
+}
+
 main {
     padding: 20px;
     display: grid;

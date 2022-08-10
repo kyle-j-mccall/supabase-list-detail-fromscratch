@@ -46,10 +46,11 @@ export function renderState(state) {
 
     image.src = `/assets/states/${state.name}.jpg`;
     stateName.textContent = state.name;
-    // link.href = `./detail-page/?id=${city.id}`;
+    link.href = `/state-details/?id=${state.id}`;
     stateDiv.append(image, stateName);
     
     link.append(stateDiv);
+    
 
     return link;
 }
@@ -61,7 +62,7 @@ export function renderStateDetail(state) {
     const stateName = document.createElement('p');
     const stateCapital = document.createElement('p');
 
-    image.src = `/assets/oregon-cities/${state.name}.jpg`;
+    image.src = `/assets/states/${state.name}.jpg`;
 
     stateCapital.textContent = `Capital: ${state.capital}`;
     stateName.textContent = state.name;

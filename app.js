@@ -3,7 +3,7 @@ import { renderCity, renderState } from './render-DOM-nodes.js';
 
 const citiesListContainer = document.getElementById('cities-container');
 const pnwStatesContainer = document.getElementById('pnw-states-container');
-console.log(pnwStatesContainer);
+
 
 
 async function loadData() {

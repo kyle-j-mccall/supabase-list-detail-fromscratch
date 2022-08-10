@@ -28,3 +28,12 @@ export async function getStates() {
     
     return resp.data;
 }
+
+export async function getState(id) {
+    const resp = await client.from('pnw-states').select('*').match({ id }).single();
+    if (resp.error) {
+        throw new Error(resp.error.message);
+    }
+    console.log(resp);
+    return resp.data;
+}
