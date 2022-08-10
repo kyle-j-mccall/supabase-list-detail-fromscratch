@@ -19,7 +19,6 @@ async function loadStatesData() {
     const allStates = await getStates();
     for (let state of allStates) {
         const stateEl = renderState(state);
-        console.log(stateEl);
         pnwStatesContainer.append(stateEl);
         
     }

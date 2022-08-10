@@ -34,6 +34,6 @@ export async function getState(id) {
     if (resp.error) {
         throw new Error(resp.error.message);
     }
-    console.log(resp);
+    
     return resp.data;
 }

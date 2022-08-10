@@ -1,5 +1,5 @@
 import { getCity } from '../fetch-utils.js';
-import { renderCityDetail, renderStateDetail } from '../render-DOM-nodes.js';
+import { renderCityDetail } from '../render-DOM-nodes.js';
 
 const detailsContainer = document.getElementById('details-container');
 
@@ -15,12 +15,12 @@ async function loadData() {
 
 }
 
-const stateId = params.get('id');
-async function loadStateDetail() {
-    const state = await getState(stateId);
-    const stateDiv = renderStateDetail(state);
-    detailsContainer.append(stateDiv);
-}
+// const stateId = params.get('id');
+// async function loadStateDetail() {
+//     const state = await getState(stateId);
+//     const stateDiv = renderStateDetail(state);
+//     detailsContainer.append(stateDiv);
+// }
 
-loadStateDetail();
+// loadStateDetail();
 loadData();
