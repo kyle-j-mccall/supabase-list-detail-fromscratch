@@ -17,11 +17,37 @@ header {
     top: 0;
     display: flex;
     align-items: center;
+    justify-content: center;
     background-color: var(--header-background);
+}
+
+#cities-container {
+    justify-self: center;
+}
+
+p {
+    text-align: center;
+}
+
+#pnw-states-container {
+    justify-self: center;
+
+}
+
+#details-container {
+    justify-self: center;
 }
 
 main {
     padding: 20px;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    justify-content: center;
+}
+
+img {
+    height: 200px;
+    width: 300px;
 }
 
 footer {

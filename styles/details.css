@@ -1,0 +1,25 @@
+body {
+    background-color: cadetblue;
+}
+
+
+header {
+    text-align: center;
+    
+}
+
+p {
+    text-align: center;
+    font-size: 25px;
+}
+
+img {
+    height: 500px;
+    width: 750px;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+}
+
