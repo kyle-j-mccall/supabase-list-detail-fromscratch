@@ -17,6 +17,14 @@ export async function getCity(id) {
         throw new Error(resp.error.message);
     }
     
-    console.log(resp);
+    return resp.data;
+}
+
+export async function getStates() {
+    const resp = await client.from('pnw-states').select('*');
+    if (resp.error) {
+        throw new Error(resp.error.message);
+    }
+    
     return resp.data;
 }
